@@ -5,8 +5,8 @@
 }
 
 body{ 
-    background-color: Maroon (x11);
-    color: #DC97A5;
+    background-color: Hot pink;
+    color: #333;
     text-align:center;
     line-height: 3;
 }
@@ -22,6 +22,7 @@ body{
 .hero h1{
     font-size: 100px;
 }
+
 
 .grid {
     display: grid;
