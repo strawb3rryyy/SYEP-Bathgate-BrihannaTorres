@@ -5,7 +5,7 @@
 }
 
 body{ 
-    background-color: Hot pink;
+    background-color: rgb(184, 53, 86);
     color: #333;
     text-align:center;
     line-height: 1.7;
@@ -30,7 +30,7 @@ body{
 }
 
 .grid div{
-    background-color:#eeb7d8;
+    background-color:rgb(220, 151, 165);
     padding: 20px;
     border-radius: 40px;
 
