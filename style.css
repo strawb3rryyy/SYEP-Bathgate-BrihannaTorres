@@ -86,3 +86,19 @@ body{
 
 =======
 >>>>>>> dec71de8b7d724f5344c636eeeaebd9d06f0d653
+
+
+
+@media (max-width: 768px){ 
+    .hero h1 {font: size 40px;}
+}
+
+@media (max-width: 786px){
+    body {background-color: rgb(204, 94, 116);}
+} 
+
+.hero-text{
+    display: flex;
+    flex-direction: colum;
+}
+
