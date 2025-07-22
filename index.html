@@ -1,38 +1,250 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Brihanna's Portfolio</title>
 
-  <head>
-      <meta charset ="UTF-8">
-      <meta name="viewport"content= "width=device-wdith,initial-scale=1.0">
-    <title>Brihanna's Porfolio</title>
-    <link href="style.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+
+
+  <style>
+ 
+/* Banner Section */
+.banner {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: -10px;
+}
+
+.banner-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+.name-overlay {
+  position: absolute;
+  bottom: 150px; /* Adjust this to sit right on the pink line */
+  width: 100%;
+  text-align: center;
+  font-size: 14em;
+  font-family: 'Dancing Script', cursive;
+  font-weight: bold;
+  color: #c2185c9a;
+  text-shadow: 1px 1px 2px white;
+}
+
+
+    /* Apply Dancing Script to key headings */
+.section h2,
+h2.expertise-title {
+  font-family: 'Dancing Script', cursive;
+}
+
+    /* General Styling */
+    body {
+      background-color: #ff4da669; /* Parrot Pink */
+      margin: 0;
+      padding: 0;
+      color: white;
+    }
+
+    /* Hero Section */
+    .hero {
+      background-color: transparent;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 50px 20px;
+    }
+
+    @keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+    .hero h1 {
+  font-family: 'Dancing Script', cursive;
+  font-weight: 600;
+  font-size: 3em;
+  color: #c2185b;
+  margin-bottom: 20px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+
+   animation: fadeUp 2.0s ease forwards;
+ }
+
+
+
+}
+
+
+    .accent {
+      color: #c2185b;
+      font-weight: bold;
+    }
+
+    .hero img {
+  max-width: 400px;
+  width: 100%;
+  border-radius: 10000px;
+  margin-top: 20px;
+  border: 4px solid #c2185b; /* Dark pink border */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Soft shadow */
+}
+
+
+    /* Section Styling */
+    .section {
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    h2 {
+      font-weight: bold;
+      font-size: 2em;
+      color: #c2185b;
+      margin-bottom: 20px;
+    }
+
+    .section p {
+      font-size: 1.1em;
+      line-height: 1.6;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    /* Skills Styling */
+    .skills-list {
+      list-style-type: disc;
+      text-align: left;
+      display: inline-block;
+      margin-top: 20px;
+      padding: 20px 40px;
+      border: 2px solid #c2185b;
+      border-radius: 12px;
+      background-color: rgba(255, 255, 255, 0.1);
+      color: white;
+      font-size: 1.1em;
+      line-height: 1.6;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    }
+
+    /* Unique Header Style */
+    .expertise-title {
+      display: inline-block;
+      padding: 15px 30px;
+      border: 3px dashed #c2185b;
+      border-radius: 50px;
+      background-color: rgba(255, 255, 255, 0.1);
+      color: #ffffff;
+      font-size: 2em;
+      font-weight: bold;
+      margin-bottom: 30px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.25);
+    }
+  </style>
 </head>
 
-<!-- This is where most of my code will live -->
-<body> 
+<body>
 
-    <section id="home" class="hero">    
-        <img src="#" alt="profile picture">
-        <h1> Hii, I am <span class= "accent">Brihanna Torres</span></h1>
-        <p> I own a small hair bussiness </p>
-    </section>
-<section id="about" class="section"> 
+ <!-- Top Banner with Name Overlay -->
+<div class="banner">
+  <img src="https://m.media-amazon.com/images/I/61q07Rh9c3L._AC_SL1500_.jpg" alt="Hello My Name Is" class="banner-img">
+  <div class="name-overlay">Brihanna Torres</div>
+</div>
+
+
+<!-- Hero Section -->
+  <section id="home" class="hero">
+    <h1>Your New <span class="accent">Favorite Hairstylist</span></h1>
+    <img src="https://github.com/strawb3rryyy/SYEP-Bathgate-BrihannaTorres/blob/main/IMG_1137%20(2).jpg?raw=true" alt="Brii's profile picture">
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section">
     <h2>About Me</h2>
-    <p> 5-6 sentences about me </p>
-</section>
+    <p>I’m Brihanna Torres, a young hairstylist balancing high school life with building a business I truly love.
+      Hair isn’t just a job for me. It’s my art, my escape, and my way of empowering others to feel beautiful in their own skin.
+      I might still be learning and growing, but every style I create comes from the heart, with care, detail, and passion.<br><br>
+      This is more than just hair. It’s a journey, and I’m just getting started.
+    </p>
+  </section>
 
-<section id="skills" class="section">
-    <h2>My skills</h2> 
-    <div class = "grid"> 
-        <div>HTML</div>
-        <div>CSS</div>
-        <div>JavaScript</div>
-    </div>
-</section>
-    
+  <!-- Skills Section -->
+  <section id="skills" class="section">
+    <h2 class="expertise-title"> My Areas of Expertise</h2>
 
+    <h2> Hair & Beauty </h2>
+    <ul class="skills-list">
+      <li><strong>Braiding</strong> (knotless, box braids, cornrows, etc.)</li>
+      <li><strong>Sew-ins & quick weaves</strong></li>
+      <li><strong>Silk presses</strong></li>
+      <li><strong>Hair styling & creative parting</strong></li>
+      <li><strong>Hair care & maintenance advice</strong></li>
+      <li><strong>Edge styling / baby hair design</strong></li>
+    </ul>
+
+    <h2> Interpersonal & Social skills </h2>
+    <ul class="skills-list">
+ <li><strong> Teamowork </strong></li>
+      <li><strong>Self-dicipline</strong></li>
+      <li><strong> Leadership</Strong></li>
+      <li><strong>Adaptability</strong></li>
+      <li><strong>Relationship-building</strong></li>
+      <li><strong>Emotional intelligence</strong></li>
+    </ul>
+
+  </section>
+
+  <!-- Contact Section -->
+<section id="contact" class="section">
+  <h2>Contact Me</h2>
+  <form class="contact-form">
+    <label for="name">Name:</label><br>
+    <input type="text" id="name" name="name" placeholder="Your full name" required><br>
+
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email" placeholder="your.email@example.com" required><br>
+
+    <label for="message">Message:</label><br>
+    <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea><br>
+
+    <button type="submit">Send</button>
+  </form>
+
+  <p style="margin-top: 30px; font-size: 1.1em; text-align: center;">
+    Or email me directly at: 
+    <a href="mailto:Brihanna1102@gmail.com" style="color: #c2185b; font-weight: bold; text-decoration: none;">
+      Brihanna1102@gmail.com
+    </a>
+  </p>
+
+  <p style="font-size: 1.1em; text-align: center;">
+    Or call me at: 
+    <a href="tel:+19294070628" style="color: #c2185b; font-weight: bold; text-decoration: none;">
+      929-407-0628
+    </a>
+  </p>
+</section>
 
 
 </body>
-
 </html>
+
+<!--random-->
+
+
+

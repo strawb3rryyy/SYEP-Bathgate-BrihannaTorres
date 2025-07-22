@@ -6,7 +6,11 @@
 
 body{ 
     background-color: rgb(184, 53, 86);
+<<<<<<< HEAD
+    color: #181616;
+=======
     color: #333;
+>>>>>>> dec71de8b7d724f5344c636eeeaebd9d06f0d653
     text-align:center;
     line-height: 1.7;
 }
@@ -30,8 +34,55 @@ body{
 }
 
 .grid div{
+<<<<<<< HEAD
+    background-color: rgb(220, 151, 165) ;
+=======
     background-color:rgb(220, 151, 165);
+>>>>>>> dec71de8b7d724f5344c636eeeaebd9d06f0d653
     padding: 20px;
     border-radius: 40px;
 
 }
+<<<<<<< HEAD
+
+#skills {
+  text-align: center;
+}
+
+.grid {
+  display: flex;
+  justify-content: center;   /* Center the items horizontally */
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.grid div {
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: bold;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.skills-list {
+  list-style-type: disc;
+  text-align: left;
+  display: inline-block;
+  margin-top: 20px;
+  padding: 20px;
+  padding-left: 40px;
+  border: 2px solid#c2185c41; /* dark pink border */
+  border-radius: 12px;
+  background-color: rgba(255, 255, 255, 0.1); /* light transparent background */
+  color: white;
+  font-size: 1.1em;
+  line-height: 1.6;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* optional shadow */
+}
+
+#skills {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+=======
+>>>>>>> dec71de8b7d724f5344c636eeeaebd9d06f0d653
