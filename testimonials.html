@@ -2,100 +2,237 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Brihanna's Portfolio</title>
 
   <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
   <!-- Font Awesome CDN -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-<link herf="style2.css" rel="stylesheet"
-  </head>
-
-
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="index.html">
-     StyledbyBrii
-
-    </a>
-
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-      <div class="navbar-nav">
-        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-        <a class="nav-link" href="index.html#about">About Me</a>
-      
-        <a class="nav-link" href="index.html#My areas of Experties">Testimonials</a>
-        <a class="nav-link" href="testimonials.html">Contact</a>
-         </div>
-    </div>
-  </div>
-</nav>
-
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="style2.css" rel="stylesheet">
+</head>
 
 <body>
 
-<main> 
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">StyledbyBrii</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          <a class="nav-link" href="index.html#about">About Me</a>
+          <a class="nav-link" href="index.html#My areas of Experties">Testimonials</a>
+          <a class="nav-link" href="testimonials.html">Contact</a>
+        </div>
+      </div>
+    </div>
+  </nav>
 
-    <section class = "container">
-        <div class ="title">
-            <h2>Testimonials</h2>
-            <div class ="underline"></div>
+  <!-- CLIENT REVIEWS -->
+  <section class="section py-5">
+    <div class="container text-center">
+      <div class="title mb-4">
+        <h2>Testimonials</h2>
+        <div class="underline mx-auto"></div>
+      </div>
+
+      <div class="testimonial-carousel d-flex align-items-center justify-content-center border p-4 rounded shadow-sm">
+        <button class="btn btn-outline-primary me-3 prev-btn">
+          <i class="fas fa-chevron-left"></i>
+        </button>
+
+        <div class="review text-center">
+          <div class="img-container mb-3">
+            <img src="person-1.jpg" id="person-img" alt="Client" class="rounded-circle border" width="150">
+          </div>
+          <h4 id="author">Jane Doe</h4>
+          <p id="job" class="text-muted">Model</p>
+          <p id="info">
+            Brii styled my hair for a shoot and it was perfection. I’ll definitely be booking again!
+          </p>
         </div>
 
-        <article class ="review"> 
-         <div class="img-container">
-           <img src = "#" id="person-img">
-         </div>
+        <button class="btn btn-outline-primary ms-3 next-btn">
+          <i class="fas fa-chevron-right"></i>
+        </button>
+      </div>
+    </div>
+  </section>
 
+  <!-- BOOTSTRAP JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
 
+  <!-- TESTIMONIAL JS -->
+  <script>
+    const reviews = [
+      {
+        img: "person-1.jpg",
+        name: "Eve Abraha",
+        job: "Teacher",
+        text: "Brii styled my hair for a shoot and it was perfection. I’ll definitely be booking again!"
+      },
+      {
+        img: "person-2.jpg",
+        name: "Melina Sanchez",
+        job: "Hairstylist",
+        text: "Her attention to detail is top tier. The look was flawless in every shot."
+      },
+      {
+        img: "person-3.jpg",
+        name: "",
+        job: "Bride",
+        text: "Brii made my wedding morning feel calm and beautiful. She's the best."
+      }
+    ];
 
-         <h4 id ="author"> Insert Name Here </h4>
-         <p id ="job"> Insert Job Here</p>
-         <p id ="info">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
-            asperiores debitis incidunt, eius earum ipsam cupiditate libero?
-            Iste, doloremque nihil?
-         </p>
+    const img = document.getElementById("person-img");
+    const author = document.getElementById("author");
+    const job = document.getElementById("job");
+    const info = document.getElementById("info");
 
-         <div class = "button-container">
-                  <button class = "prev-btn">
+    const prevBtn = document.querySelector(".prev-btn");
+    const nextBtn = document.querySelector(".next-btn");
 
-                     <i class ="fas fa-chevron-left"></i>
-                  </button>
+    let currentItem = 0;
 
-                    <button class = "next-btn">
+    function showPerson(index) {
+      const item = reviews[index];
+      img.src = item.img;
+      author.textContent = item.name;
+      job.textContent = item.job;
+      info.textContent = item.text;
+    }
 
-                     <i class ="fas fa-chevron-left"></i>
-                    </button>
+    // Load first person
+    showPerson(currentItem);
 
+    // Show next
+    nextBtn.addEventListener("click", () => {
+      currentItem = (currentItem + 1) % reviews.length;
+      showPerson(currentItem);
+    });
 
-            </div>
+    // Show prev
+    prevBtn.addEventListener("click", () => {
+      currentItem = (currentItem - 1 + reviews.length) % reviews.length;
+      showPerson(currentItem);
+    });
+  </script>
 
-        </article>
-    </section>
-</main>
-
-
-
-
-
-
-
-
-
-
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
- <script src="script.js"></script>
-
-  </body>
-
-
+</body>
 </html>
- 
+
+<!-- Client Reviews Section -->
+<section class="testimonials-section py-5">
+  <div class="container">
+    <h2 class="text-center mb-4">Client Reviews</h2>
+    <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+
+        <div class="carousel-item active">
+          <div class="testimonial-card text-center p-4">
+            <p>"“Wow where do I even begin with StyledbyBri?! Not only is her work amazing and lasts, she also has the most welcoming environment and does anything to make me comfortable! She makes appointments fun no matter what and with all this she still shows her passion and professionalism time and time again! I’m forever grateful I’ve found a hair stylist who is caring and talented at the same time. Once you go you’ll never turn back!"</p>
+            <h5>- Roselyn M.</h5>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="testimonial-card text-center p-4">
+            <p>"Getting my hair done by Brihanna Torres (Styledbybrii) has been one of the best experiences I’ve ever had in regards of friendliness and professionalism. As I got to her home based work place she had all the materials required and made sure to be as kind as possible throughout the long braiding process so I wouldn’t feel uncomfortable or unsatisfied. I really enjoyed my laid back cornrows and made sure to become a reoccurring customer to support her small business which deserves to be much bigger. She is truly a hidden gem and I recommend her to all who plan to get their hair done and have a good time!"</p>
+            <h5>- Emmanuel A.</h5>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="testimonial-card text-center p-4">
+            <p>"Brihanna Torres is THAT braider!! Her styles last weeks , and you’ll be turning heads from the moment you leave. She makes every appointment feel like hanging out with your favorite friend. Appointments with her are fun, comfortable, and full of good vibes. On top of that, she’s a small business boss who’s crazy professional and always makes sure you walk out looking AMAZING.
+"</p>
+            <h5>- Angie B.</h5>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="testimonial-card text-center p-4">
+            <p>"Professional, talented, and so sweet. Highly recommend."</p>
+            <h5>- Jayliz C.</h5>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="testimonial-card text-center p-4">
+            <p>"Brihanna Torres completely transformed my look! From the moment I walked in, her warm personality made me feel right at home. She took the time to understand exactly what I wanted and worked with such care and precision. My braids came out flawless, and I received so many compliments afterward. The whole experience was relaxing, fun, and professional — I left feeling confident and excited for my next appointment. I can’t recommend her enough!"</p>
+            <h5>- Kiara A.</h5>
+          </div>
+        </div>
+
+                <div class="carousel-item">
+          <div class="testimonial-card text-center p-4">
+            <p>"I’ve been coming to Brihanna for a while now, and it’s been amazing to watch her talent and skills grow with each visit. Every time I sit in her chair, she’s learned something new, perfected a technique, or added a creative twist that makes my style even better than the last. Her dedication to improving and giving her clients the best experience is inspiring. It’s clear she truly loves what she does, and that passion shows in every braid, part, and detail. I’m proud to be one of her loyal clients and can’t wait to see how far she goes!"</p>
+            <h5>- Nashlie R.</h5>
+          </div>
+        </div>
+
+      </div>
+
+      <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- Hours & Contact Section -->
+<section class="hours-contact-section py-5">
+  <div class="container">
+    <div class="row g-4">
+      
+      <div class="col-md-6">
+        <div class="info-card p-4 text-center">
+          <h3>Hours</h3>
+          <p>Mon - Fri: 8am - 6pm</p>
+          <p>Saturday: 8am - 6pm</p>
+          <p>Sunday: 10am - 2pm</p>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="info-card p-4 text-center">
+          <h3>Contact</h3>
+          <p>Email: Brihanna1102@gmail.com</p>
+          <p>Phone: (929)-407-0628</p>
+          <p>Instagram: @styledbybrii.__</p>
+          <p>Website: styledbybrii.as.me</p>
+        </div>
+      </div>
+
+      <p>
+  
+
+
+<section class="section contact-section text-center py-5">
+  <div class="container">
+    <h2>Book Your Appointment</h2>
+    <p>
+      Ready for a fresh look? Schedule your session at&nbsp;
+      <a href="https://styledbybrii.as.me" target="_blank" rel="noopener" class="booking-link">
+        styledbybrii.as.me
+      </a>
+    </p>
+  </div>
+</section>
+
+
+    </div>
+  </div>
+</section>
+
