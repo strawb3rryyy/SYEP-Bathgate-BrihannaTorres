@@ -286,5 +286,101 @@ h2, .expertise-title {
 }
 
 
+/* About Me section font */
+#about p {
+  font-family: 'Times New Roman', Times, serif;
+}
 
+
+.about-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  max-width: 1100px;
+  margin: 0 auto;
+  flex-wrap: wrap; /* stacks on smaller screens */
+  text-align: left;
+}
+
+.about-image img {
+  width: 280px;
+  max-width: 100%;
+  border-radius: 1000px;
+  border: 4px solid #c2185b; /* keep your original pink border */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* keep your shadow style */
+}
+
+.about-text {
+  flex: 1;
+  color: white; /* keep your original text color */
+}
+
+.about-text h2 {
+  text-align: left;
+}
+
+@media (max-width: 768px) {
+  .about-wrapper {
+    flex-direction: column;
+    text-align: center;
+  }
+  .about-text h2 {
+    text-align: center;
+  }
+}
+
+
+
+.about-text h2 {
+  text-align: center; /* centers the title */
+  color: #c36e90;     /* keep your original heading color */
+  margin-bottom: 20px;
+}
+
+
+
+
+.booking-policies {
+  text-align: center;
+}
+
+.booking-policies .section-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem; /* spacing between policy blocks */
+}
+
+.booking-policies .policy div {
+  max-width: 600px; /* Optional: limit width for better readability */
+}
+
+.booking-policies h2.booking-title {
+  text-align: center;
+}
+
+.booking-policies .policy h4 {
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.booking-policies .policy p {
+  text-align: center;
+  margin: 0 auto;
+}
+
+
+
+
+.contact-cards {
+  display: flex;
+  gap: 30px;           /* space between cards */
+  justify-content: center;
+  flex-wrap: wrap;     /* stack on smaller screens */
+}
+
+.contact-card {
+  flex: 1 1 300px;     /* cards grow/shrink, min width 300px */
+  max-width: 450px;    /* optional max width */
+}
 
