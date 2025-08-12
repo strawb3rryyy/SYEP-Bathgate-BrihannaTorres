@@ -68,6 +68,8 @@ currentItem = reviews.length - 1;
 showPerson(currentItem);
 });
 
+</script>
+
 
 
 
